@@ -67,3 +67,4 @@ class PhotoCopier(Printer, Scanner):
 
     def print(self, document):
         pass
+
