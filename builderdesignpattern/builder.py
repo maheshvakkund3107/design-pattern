@@ -23,6 +23,8 @@ class PersonBuilder:
     def works(self):
         return PersonJobBuilder(self.person)
 
+    # Violation of Open Closed Principle
+    # Open for Extension closed for modification on the Person object.
     @property
     def lives(self):
         return PersonAddressBuilder(self.person)
